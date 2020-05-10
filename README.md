@@ -1,1 +1,3 @@
-# Controlling-a-turtlebot-to-Move-in-a-desired-Path-Getting-Started-with-ROS
+# Controlling-a-turtlebot-to-Move-in-a-desired-Path:Getting-Started-with-ROS
+
+The ROS package named “turtlesim_cleaner” contains a python file named “my_initials.py” that creates a node to move the turtle in the turtle simulator in such a way that the path is in the form of the first letter in my last name (in this case “S”). The node publishes the messages by changing the linear and angular velocity along the x-y-z directions to control the path of the turtle. The node then communicates the created message to the turtle simulator(subscriber). The node basically moves the turtle for a specific distance set inside the code. If it is only a linear displacement then only the linear velocity is set, if the path requires a twist the angular velocity is also set.
